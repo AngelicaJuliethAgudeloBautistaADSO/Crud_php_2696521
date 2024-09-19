@@ -79,11 +79,10 @@ class Modelo{
         // echo $sql;
         
     }
-
     public function delete($id){
-
-        $sql = "delete from users where id = 1";
+        $sql = "delete from users where id =:id";
         $stm = $this->db->prepare($sql);
         $stm->bindValue(":id", $id);
+        $stm->execute();
     }
 }

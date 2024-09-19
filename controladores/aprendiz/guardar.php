@@ -1,8 +1,8 @@
 <?php
 
-require_once(__DIR__ . "/../libs/Database.php");
-require_once(__DIR__ . "/../libs/modelo.php");
-include_once("../clases/Aprendiz.php");
+require_once(__DIR__ . "/../../libs/Database.php");
+require_once(__DIR__ . "/../../libs/modelo.php");
+include_once("../../clases/Aprendiz.php");
 
 
 $nombre = isset($_POST['first_name']) ?
